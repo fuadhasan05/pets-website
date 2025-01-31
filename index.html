@@ -17,6 +17,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <style>
         .font-sora {
             font-family: "Sora", serif;
@@ -24,6 +27,10 @@
 
         .font-adlam {
             font-family: "ADLaM Display", serif;
+        }
+
+        .checked {
+            color: orange;
         }
     </style>
 
@@ -36,6 +43,8 @@
                         'pet-primary': 'rgba(255, 220, 38, 1)',
                         'nav-color': '#FFF9F4',
                         'card-color': '#F9DF8A',
+                        'trend-color': 'rgba(255, 249, 244, 1)',
+
                     }
                 }
             }
@@ -146,13 +155,13 @@
     </header>
 
     <!-- main section -->
-    <main class="md:container mx-auto">
+    <main class="">
 
         <!-- Animation -->
 
 
         <!-- Browse By Categories Section -->
-        <section class="pl-3 lg:pl-0 pr-3 lg:pr-0 pt-20 pb-10 ">
+        <section class="md:container mx-auto pl-3 lg:pl-0 pr-3 lg:pr-0 pt-20 pb-20 ">
             <h3 class="font-adlam text-base lg:text-4xl">Browse By Categories</h3>
 
             <!-- All Card -->
@@ -188,7 +197,7 @@
 
                 <!-- Card-5 -->
                 <div class="bg-card-color p-7 lg:p-14 rounded-md justify-items-center">
-                    <img src="./assets/pet-couch.png" alt="" class="bg-white rounded-full p-5">
+                    <img src="./assets/mouse-cartoon.png" alt="" class="bg-white rounded-full p-5">
                     <h4 class="font-adlam mt-4">Small Pet</h4>
                     <p>3 items</p>
                 </div>
@@ -202,6 +211,138 @@
             </div>
 
         </section>
+
+
+        <!-- Trending Pet Products Section -->
+        <div class="bg-trend-color w-full">
+
+            <section class="md:container mx-auto pl-3 lg:pl-0 pr-3 lg:pr-0 pt-20 pb-10">
+                <h3 class="font-adlam text-base lg:text-4xl pb-10">Trending Pet Products</h3>
+
+                <!-- All Card -->
+                <div class="grid grid-cols-2 gap-4">
+
+                    <!-- Left Card -->
+                    <div class="col-span-1 relative bg-card-color rounded-lg ">
+
+                        <div class=" absolute left-4 top-4 max-w-2xl">
+                            <h3 class="font-adlam text-base lg:text-3xl">
+                                T- Shirt For Dogs</h3>
+                            <p class=" text-base lg:text-xl mt-5 mb-5">
+                                Discover a world of treats, toys, <br> and
+                                essentials handpicked for </p>
+                            <button class="btn ">
+                                Shop Now 
+                            </button>
+                        </div>
+
+                        <div class="absolute bottom-0 right-0">
+                            <img src="./assets/cute-pet-mid.png" alt="" class="max-w-60 max-h-80">
+                        </div>
+                    </div>
+
+                    <!-- Right Cards -->
+                    <div class="">
+                        <div class=" grid grid-cols-3 md:col-span-2 gap-4">
+
+                            <!-- Card-1 -->
+                            <div class="flex gap-4 bg-white border border-stone-200 p-2 rounded-lg "> 
+                                <img src="./assets/dog-cartoon.png" alt="" class="bg-trend-color p-3 rounded">
+                                <div>
+                                    <p><span class="fa fa-star checked pr-2"></span>4.5</p>
+                                    <h4 class="text-xl">Pet Bed</h4>
+                                    <p>$39.99</p>
+                                </div>
+                            </div>
+    
+                            <!-- Card-2 -->
+                            <div class="flex gap-4 bg-white border border-stone-200 p-2 rounded-lg">
+                                <img src="./assets/fish-cartoon.png" alt="" class="bg-trend-color p-3 rounded">
+                                <div>
+                                    <p><span class="fa fa-star checked pr-2"></span>4.5</p>
+                                    <h4 class="text-xl">Pet Bed</h4>
+                                    <p>$39.99</p>
+                                </div>
+                            </div>
+    
+                            <!-- Card-3 -->
+                            <div class="flex gap-4 bg-white border border-stone-200 p-2 rounded-lg">
+                                <img src="./assets/bird-cartoon.png" alt="" class="bg-trend-color p-3 rounded">
+                                <div>
+                                    <p><span class="fa fa-star checked pr-2"></span>4.5</p>
+                                    <h4 class="text-xl">Pet Bed</h4>
+                                    <p>$39.99</p>
+                                </div>
+                            </div>
+    
+                            <!-- Card-4 -->
+                            <div class="flex gap-4 bg-white border border-stone-200 p-2 rounded-lg">
+                                <img src="./assets/rabbit-cartoon.png" alt="" class="bg-trend-color p-3 rounded">
+                                <div>
+                                    <p><span class="fa fa-star checked pr-2"></span>4.5</p>
+                                    <h4 class="text-xl">Pet Bed</h4>
+                                    <p>$39.99</p>
+                                </div>
+                            </div>
+    
+                            <!-- Card-5 -->
+                            <div class="flex gap-4 bg-white border border-stone-200 p-2 rounded-lg">
+                                <img src="./assets/bird-cartoon.png" alt="" class="bg-trend-color p-3 rounded">
+                                <div>
+                                    <p><span class="fa fa-star checked pr-2"></span>4.5</p>
+                                    <h4 class="text-xl">Pet Bed</h4>
+                                    <p>$39.99</p>
+                                </div>
+                            </div>
+    
+                            <!-- Card-6 -->
+                            <div class="flex gap-4 bg-white border border-stone-200 p-2 rounded-lg">
+                                <img src="./assets/pet-couch.png" alt="" class="bg-trend-color p-3 rounded">
+                                <div>
+                                    <p><span class="fa fa-star checked pr-2"></span>4.5</p>
+                                    <h4 class="text-xl">Pet Bed</h4>
+                                    <p>$39.99</p>
+                                </div>
+                            </div>
+    
+                            <!-- Card-7 -->
+                            <div class="flex gap-4 bg-white border border-stone-200 p-2 rounded-lg">
+                                <img src="./assets/fish-cartoon.png" alt="" class="bg-trend-color p-3 rounded">
+                                <div>
+                                    <p><span class="fa fa-star checked pr-2"></span>4.5</p>
+                                    <h4 class="text-xl">Pet Bed</h4>
+                                    <p>$39.99</p>
+                                </div>
+                            </div>
+    
+                            <!-- Card-8 -->
+                            <div class="flex gap-4 bg-white border border-stone-200 p-2 rounded-lg">
+                                <img src="./assets/pet-couch.png" alt="" class="bg-trend-color p-3 rounded">
+                                <div>
+                                    <p><span class="fa fa-star checked pr-2"></span>4.5</p>
+                                    <h4 class="text-xl">Pet Bed</h4>
+                                    <p>$39.99</p>
+                                </div>
+                            </div>
+    
+                            <!-- Card-9 -->
+                            <div class="flex gap-4 bg-white border border-stone-200 p-2 rounded-lg">
+                                <img src="./assets/rabbit-cartoon.png" alt="" class="bg-trend-color p-3 rounded">
+                                <div>
+                                    <p><span class="fa fa-star checked pr-2"></span>4.5</p>
+                                    <h4 class="text-xl">Pet Bed</h4>
+                                    <p>$39.99</p>
+                                </div>
+                            </div>
+                            
+    
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+        </div>
 
     </main>
 
