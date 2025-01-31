@@ -9,7 +9,8 @@
     <!-- Google Font CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
 
     <!-- DaisyUI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -19,6 +20,10 @@
     <style>
         .font-sora {
             font-family: "Sora", serif;
+        }
+
+        .font-adlam {
+            font-family: "ADLaM Display", serif;
         }
     </style>
 
@@ -30,6 +35,7 @@
                         clifford: '#da373d',
                         'pet-primary': 'rgba(255, 220, 38, 1)',
                         'nav-color': '#FFF9F4',
+                        'card-color': '#F9DF8A',
                     }
                 }
             }
@@ -119,26 +125,83 @@
             <div class="relative ">
 
                 <img src="./assets/cat-big.png" alt="" class="w-full ">
-                <div class="absolute left-0 top-0 max-w-3xl">
-                    <h1 class=" text-3xl lg:text-6xl">
-                        Pamper Your Pet, 
-                        Because They Deserve 
+                <div class="absolute left-0 top-0 max-w-2xl">
+                    <h1 class=" font-adlam text-3xl lg:text-6xl">
+                        Pamper Your Pet,
+                        Because They Deserve
                         the Bes
                     </h1>
-                    <p class=" text-base lg:text-xl text-gray-600 mt-5 mb-5">Discover a world of treats, toys, and essentials
-                        handpicked for  your furry friends. Shop now and make
+                    <p class=" text-base lg:text-xl text-gray-600 mt-5 mb-5">Discover a world of treats, toys, and
+                        essentials
+                        handpicked for your furry friends. Shop now and make
                         tails wag with joy!</p>
                     <button class="btn bg-pet-primary">
                         Find a pet
                     </button>
                 </div>
             </div>
-            
+
         </section>
+
     </header>
 
     <!-- main section -->
-    <main>
+    <main class="md:container mx-auto">
+
+        <!-- Animation -->
+
+
+        <!-- Browse By Categories Section -->
+        <section class="pl-3 lg:pl-0 pr-3 lg:pr-0 pt-20 pb-10 ">
+            <h3 class="font-adlam text-base lg:text-4xl">Browse By Categories</h3>
+
+            <!-- All Card -->
+            <div class=" grid grid-cols-2 lg:grid-cols-6 justify-between gap-4 pt-10">
+
+                <!-- Card-1 -->
+                <div class="bg-card-color p-7 lg:p-14 rounded-md justify-items-center">
+                    <img src="./assets/dog-cartoon.png" alt="" class="bg-white rounded-full p-5">
+                    <h4 class="font-adlam mt-4">Dog</h4>
+                    <p>3 items</p>
+                </div>
+
+                <!-- Card-2 -->
+                <div class="bg-card-color p-7 lg:p-14 rounded-md justify-items-center">
+                    <img src="./assets/fish-cartoon.png" alt="" class="bg-white rounded-full p-5">
+                    <h4 class="font-adlam mt-4">Fish</h4>
+                    <p>3 items</p>
+                </div>
+
+                <!-- Card-3 -->
+                <div class="bg-card-color p-7 lg:p-14 rounded-md justify-items-center">
+                    <img src="./assets/cat-cartoon.png" alt="" class="bg-white rounded-full p-5">
+                    <h4 class="font-adlam mt-4">Cat</h4>
+                    <p>3 items</p>
+                </div>
+
+                <!-- Card-4 -->
+                <div class="bg-card-color p-7 lg:p-14 rounded-md justify-items-center">
+                    <img src="./assets/bird-cartoon.png" alt="" class="bg-white rounded-full p-5">
+                    <h4 class="font-adlam mt-4">Birds</h4>
+                    <p>3 items</p>
+                </div>
+
+                <!-- Card-5 -->
+                <div class="bg-card-color p-7 lg:p-14 rounded-md justify-items-center">
+                    <img src="./assets/pet-couch.png" alt="" class="bg-white rounded-full p-5">
+                    <h4 class="font-adlam mt-4">Small Pet</h4>
+                    <p>3 items</p>
+                </div>
+
+                <!-- Card-6 -->
+                <div class="bg-card-color p-7 lg:p-14 rounded-md justify-items-center">
+                    <img src="./assets/rabbit-cartoon.png" alt="" class="bg-white rounded-full p-5">
+                    <h4 class="font-adlam mt-4">Rabit</h4>
+                    <p>2 items</p>
+                </div>
+            </div>
+
+        </section>
 
     </main>
 
