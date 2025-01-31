@@ -1,44 +1,53 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="cupcake">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet Shop</title>
-    <!-- DaisyUI CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+
     <!-- Google Font CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
 
+    <!-- DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+
     <style>
-        .google-font-sora {
+        .font-sora {
             font-family: "Sora", serif;
         }
     </style>
+
     <script>
-        tailwind.config ={
+        tailwind.config = {
             theme: {
                 extend: {
                     colors: {
                         clifford: '#da373d',
                         'pet-primary': 'rgba(255, 220, 38, 1)',
+                        'nav-color': '#FFF9F4',
                     }
                 }
             }
         }
     </script>
+
 </head>
 
-<body class="google-font-sora">
+<body class="font-sora">
     <!-- Header section -->
-    <header class="md:container mx-auto">
+    <header class=" md:container mx-auto ">
         <!-- Navbar -->
-        <nav class="mx-auto ">
-            <div class="navbar bg-[#FFF9F4] flex justify-between">
-                <div class="">
+        <nav class="mx-auto bg-nav-color">
+            <div class="navbar  flex justify-between">
+
+                <div>
+
+                    <!-- Left: Logo -->
                     <div class="dropdown ">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -54,9 +63,16 @@
                             <li><a>Contact us</a></li>
                         </ul>
                     </div>
-                    <img src="/assets/logo-header.png" alt="">
-                    <a class=" text-xl">Browse4Pets</a>
+
+                    <!-- Right: Dropdown (Mobile Menu Button) -->
+                    <div class="flex items-center">
+                        <img src="./assets/logo-header.png" alt="">
+                        <a class=" text-xl ml-2">Browse4Pets</a>
+                    </div>
+
                 </div>
+
+                <!-- Center Navigation (Hidden on Mobile) -->
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
                         <li><a>Find a pet</a></li>
@@ -65,6 +81,7 @@
                     </ul>
                 </div>
 
+                <!-- Right Section (Hidden on Mobile) -->
                 <div class=" hidden lg:flex">
                     <button class="btn btn-ghost btn-circle">
                         <div class="indicator">
@@ -83,26 +100,53 @@
                         </svg>
                     </button>
                     <div class="">
-                        <a class="btn btn-outline ">Login</a>
+                        <a class="btn border-2 border-pet-primary text-black rounded-lg hover:bg-pet-primary ">
+                            Login</a>
                         <a class="btn bg-pet-primary ">Register</a>
                     </div>
                 </div>
             </div>
         </nav>
+
         <span>
             <hr class="sm:w-full lg:hidden border-black " />
         </span>
 
+        <!-- Banner Container -->
 
+        <section class="pt-20 mb-20">
+
+            <div class="relative ">
+
+                <img src="./assets/cat-big.png" alt="" class="w-full ">
+                <div class="absolute left-0 top-0 max-w-3xl">
+                    <h1 class=" text-3xl lg:text-6xl">
+                        Pamper Your Pet, 
+                        Because They Deserve 
+                        the Bes
+                    </h1>
+                    <p class=" text-base lg:text-xl text-gray-600 mt-5 mb-5">Discover a world of treats, toys, and essentials
+                        handpicked for  your furry friends. Shop now and make
+                        tails wag with joy!</p>
+                    <button class="btn bg-pet-primary">
+                        Find a pet
+                    </button>
+                </div>
+            </div>
+            
+        </section>
     </header>
-    <!-- Main Section -->
+
+    <!-- main section -->
     <main>
 
     </main>
-    <!-- Footer Section -->
-    <Footer>
 
-    </Footer>
+    <!-- footer -->
+    <footer>
+
+    </footer>
+
 </body>
 
 </html>
