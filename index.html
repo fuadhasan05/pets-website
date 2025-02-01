@@ -136,8 +136,7 @@
 
             <div class="relative ">
 
-                <img src="./assets/cat-big.png" alt="" class="w-full ">
-                <div class="absolute left-0 top-0 max-w-2xl">
+                <div class=" max-w-2xl">
                     <h1 class=" font-adlam text-3xl lg:text-6xl">
                         Pamper Your Pet,
                         Because They Deserve
@@ -147,9 +146,13 @@
                         essentials
                         handpicked for your furry friends. Shop now and make
                         tails wag with joy!</p>
-                    <button class="btn bg-pet-primary">
+                    <button class="btn bg-pet-primary animate-bounce focus:animate-none hover:animate-none">
                         Find a pet
                     </button>
+                </div>
+
+                <div class="absolute w-full">
+                    <img src="./assets/cat-big.png" alt="" >
                 </div>
             </div>
 
@@ -159,9 +162,6 @@
 
     <!-- main section -->
     <main class="">
-
-        <!-- Animation -->
-
 
         <!-- Browse By Categories Section -->
         <section class="md:container mx-auto pl-3 lg:pl-0 pr-3 lg:pr-0 pt-20 pb-20 ">
@@ -223,12 +223,12 @@
                 <h3 class="font-adlam text-base lg:text-4xl pb-10">Trending Pet Products</h3>
 
                 <!-- All Card -->
-                <div class="grid grid-cols-2 gap-4">
+                <div class=" flex gap-4">
 
                     <!-- Left Card -->
-                    <div class="col-span-1 relative bg-card-color rounded-lg ">
+                    <div class=" bg-card-color rounded-lg pl-10 pr-10 ">
 
-                        <div class=" absolute left-4 top-4 max-w-2xl">
+                        <div class="  max-w-2xl">
                             <h3 class="font-adlam text-base lg:text-3xl">
                                 T- Shirt For Dogs</h3>
                             <p class=" text-base lg:text-xl mt-5 mb-5">
@@ -239,7 +239,7 @@
                             </button>
                         </div>
 
-                        <div class="absolute bottom-0 right-0">
+                        <div class="">
                             <img src="./assets/cute-pet-mid.png" alt="" class="max-w-60 max-h-80">
                         </div>
                     </div>
@@ -382,10 +382,6 @@
 
                 </div>
 
-
-
-
-
                 <div>
 
                 </div>
@@ -393,6 +389,78 @@
             </div>
 
         </section>
+
+
+        <!-- Discount Section -->
+
+        <section class="md:container mx-auto pl-3 lg:pl-0 pr-3 lg:pr-0 pt-20 pb-10">
+            <h3 class="font-adlam text-base lg:text-4xl pb-10">Discount Pet Products</h3>
+
+            <div class="grid grid-cols-3 gap-5">
+                <!-- Card-1 -->
+                <div class="flex gap-4 bg-white border border-stone-200 p-2 rounded-lg justify-center ">
+                    <img src="./assets/dog-cartoon.png" alt="" class="bg-trend-color p-3 rounded">
+                    <div>
+                        <p class="text-red-500">50% OFF</p>
+                        <h4 class="text-xl">Pet Bed</h4>
+                        <p>$19.99</p>
+                    </div>
+                </div>
+    
+                <!-- Card-2 -->
+                <div class="flex gap-4 bg-white border border-stone-200 p-2 rounded-lg justify-center ">
+                    <img src="./assets/fish-cartoon.png" alt="" class="bg-trend-color p-3 rounded">
+                    <div>
+                        <p class="text-red-500">50% OFF</p>
+                        <h4 class="text-xl">Pet Bed</h4>
+                        <p>$19.99</p>
+                    </div>
+                </div>
+    
+                <!-- Card-3 -->
+                <div class="flex gap-4 bg-white border border-stone-200 p-2 rounded-lg justify-center ">
+                    <img src="./assets/bird-cartoon.png" alt="" class="bg-trend-color p-3 rounded">
+                    <div>
+                        <p class="text-red-500">50% OFF</p>
+                        <h4 class="text-xl">Pet Bed</h4>
+                        <p>$19.99</p>
+                    </div>
+                </div>
+    
+                <!-- Card-4 -->
+                <div class="flex gap-4 bg-white border border-stone-200 p-2 rounded-lg justify-center ">
+                    <img src="./assets/rabbit-cartoon.png" alt="" class="bg-trend-color p-3 rounded">
+                    <div>
+                        <p class="text-red-500">50% OFF</p>
+                        <h4 class="text-xl">Pet Bed</h4>
+                        <p>$19.99</p>
+                    </div>
+                </div>
+    
+                <!-- Card-5 -->
+                <div class="flex gap-4 bg-white border border-stone-200 p-2 rounded-lg justify-center ">
+                    <img src="./assets/bird-cartoon.png" alt="" class="bg-trend-color p-3 rounded">
+                    <div>
+                        <p class="text-red-500">50% OFF</p>
+                        <h4 class="text-xl">Pet Bed</h4>
+                        <p>$19.99</p>
+                    </div>
+                </div>
+    
+                <!-- Card-6 -->
+                <div class="flex gap-4 bg-white border border-stone-200 p-2 rounded-lg justify-center ">
+                    <img src="./assets/pet-couch.png" alt="" class="bg-trend-color p-3 rounded">
+                    <div>
+                        <p class="text-red-500">50% OFF</p>
+                        <h4 class="text-xl">Pet Bed</h4>
+                        <p>$19.99</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
 
 
     </main>
@@ -468,7 +536,8 @@
             </div>
         </div>
 
-    </footer> 
+    </footer>
+    
 
 </body>
 
